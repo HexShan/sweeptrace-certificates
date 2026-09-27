@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SweepTrace — File Recovery Evidence Report</title>
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    background:#f4f7fb;
+    color:#172238;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.top{
+    background:#101a2d;
+    color:white;
+    padding:22px 28px;
+}
+.brand{font-size:20px;font-weight:800;letter-spacing:-.02em}
+.container{
+    width:min(920px,calc(100% - 32px));
+    margin:38px auto 60px;
+}
+.back{
+    color:#64748b;
+    font-size:13px;
+    margin-bottom:22px;
+}
+.hero{
+    background:white;
+    border:1px solid #dfe7f1;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(25,55,100,.06);
+    margin-bottom:18px;
+}
+.eyebrow{
+    color:#3975e8;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.14em;
+}
+h1{
+    margin:9px 0 8px;
+    font-size:30px;
+    letter-spacing:-.04em;
+}
+.subtitle{
+    margin:0;
+    color:#718096;
+    line-height:1.6;
+}
+.status{
+    display:inline-flex;
+    margin-top:20px;
+    padding:8px 12px;
+    border-radius:999px;
+    background:#ecfdf5;
+    color:#16845e;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.08em;
+}
+.card{
+    background:white;
+    border:1px solid #dfe7f1;
+    border-radius:16px;
+    padding:22px;
+    margin-bottom:14px;
+}
+.section-title{
+    font-size:13px;
+    font-weight:800;
+    margin-bottom:16px;
+    color:#26344a;
+}
+.field{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:18px;
+    padding:11px 0;
+    border-top:1px solid #edf1f6;
+}
+.field span{
+    color:#7a899e;
+    font-size:12px;
+}
+.field strong{
+    color:#172238;
+    font-size:12px;
+    font-weight:600;
+    overflow-wrap:anywhere;
+    white-space:pre-wrap;
+}
+ul{
+    margin:0;
+    padding-left:20px;
+    color:#718096;
+    font-size:12px;
+    line-height:1.7;
+}
+.footer{
+    text-align:center;
+    color:#94a3b8;
+    font-size:11px;
+    margin-top:25px;
+}
+@media(max-width:650px){
+    .field{grid-template-columns:1fr;gap:5px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+    <div class="brand">SweepTrace</div>
+</header>
+
+<main class="container">
+    <div class="back">Public verification document</div>
+
+    <section class="hero">
+        <div class="eyebrow">RECOVERY EVIDENCE REPORT</div>
+        <h1>File Recovery Evidence Report</h1>
+        <p class="subtitle">Evidence report documenting the completed recovery operation and its verification record.</p>
+        <span class="status">✓ VERIFIED</span>
+    </section>
+
+    
+    <section class="card">
+        <div class="section-title">Operation</div>
+        
+    <div class="field">
+        <span>Operation ID</span>
+        <strong>recovery-1788961990156392000</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Operation</span>
+        <strong>file_recovery</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Started</span>
+        <strong>2026-09-09T13:53:10.156449Z</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Completed</span>
+        <strong>2026-09-09T13:53:10.157257Z</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Method</span>
+        <strong>Signature carving from forensic evidence</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Bytes processed</span>
+        <strong>51</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Target</span>
+        <strong>/Users/niranjan/SweepTrace/sandbox/targets/demo-recovery-image.img</strong>
+    </div>
+    
+    </section>
+    
+    <section class="card">
+        <div class="section-title">Independent Verification</div>
+        
+    <div class="field">
+        <span>Status</span>
+        <strong>VERIFIED</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Verification ID</span>
+        <strong>verify-1788962020981057000-recovery-1788961990156392000</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Verifier version</span>
+        <strong>sweeptrace-independent-verifier/0.1.0</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Verification scope</span>
+        <strong>{
+  &quot;bytes_checked&quot;: 37,
+  &quot;description&quot;: &quot;all recorded recovered outputs and source ranges&quot;,
+  &quot;items_checked&quot;: 2,
+  &quot;items_required&quot;: 2
+}</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Evidence</span>
+        <strong>[
+  &quot;all recovered outputs independently match recorded provenance and hashes&quot;
+]</strong>
+    </div>
+    
+        
+    <div class="field">
+        <span>Expected state</span>
+        <strong>each recovered output is a regular sandbox/recovered file whose bytes, hash, format and source range match recorded provenance</strong>
+    </div>
+    
+    </section>
+    
+        <section class="card">
+            <div class="section-title">Document Integrity</div>
+            
+    <div class="field">
+        <span>Document ID</span>
+        <strong>recovery-report-recovery-1788961990156392000</strong>
+    </div>
+    
+            
+    <div class="field">
+        <span>Document SHA-256</span>
+        <strong>aed6fd4e7b34fbfd1f062b341e40054247dceb9ae01edcec007d67cb3e570d93</strong>
+    </div>
+    
+            
+    <div class="field">
+        <span>Generated</span>
+        <strong>2026-09-27T10:52:41.327832Z</strong>
+    </div>
+    
+            
+    <div class="field">
+        <span>Renderer</span>
+        <strong>sweeptrace-local-renderer/0.1.0</strong>
+    </div>
+    
+        </section>
+        
+        <section class="card">
+            <div class="section-title">Limitations</div>
+            <ul>
+                <li>Recovery results are limited to technically available data within the supplied forensic evidence.</li><li>Recovered file percentage is an estimate relative to the candidate&#x27;s estimated recoverable size.</li>
+            </ul>
+        </section>
+        
+
+    <div class="footer">
+        SweepTrace local evidence renderer · Read-only public copy
+    </div>
+</main>
+</body>
+</html>
